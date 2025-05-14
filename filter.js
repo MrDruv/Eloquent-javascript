@@ -2,6 +2,7 @@ const users = [{name : "Alice",age : 17 },
 		{name : "Bob", age : 18},
 		{name : "Can", age : 19}]
 const adults = users.filter(users => users.age >= 18)
+console.log(users);
 console.log(adults);
 
 /*To find scripts in  dataset that in  use
