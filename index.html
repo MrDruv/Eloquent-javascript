@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>this in Event Listener</title>
+</head>
+<body>
+  <button id="myButton">Click me</button>
+
+  <script>
+    const button = document.getElementById("myButton");
+
+    button.addEventListener("click", function () {
+      console.log(this);          // 👉 refers to the button element
+      this.style.backgroundColor = "lightgreen"; // changes button color
+      this.textContent = "Clicked!";
+    });
+  </script>
+</body>
+</html>
